@@ -1,0 +1,19 @@
+{
+  "name": "canonical-beacon",
+  "version": "1.0.0",
+  "description": "Check canonical tags and hreflang clusters in your built static site: missing, multiple, relative or in-body canonicals, targets that are missing, noindex or chained, and hreflang codes, self-references, return links and x-default. Text/JSON/SARIF/Markdown, allowlist with expiry, GitHub Action. Zero deps.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": { ".": { "types": "./src/index.d.ts", "default": "./src/index.js" }, "./package.json": "./package.json" },
+  "bin": { "canonical-beacon": "bin/canonical-beacon.js" },
+  "files": ["src", "bin", "action.yml", "README.md", "CHANGELOG.md", "LICENSE"],
+  "engines": { "node": ">=18" },
+  "scripts": { "test": "node --test test/*.test.js" },
+  "keywords": ["canonical", "rel-canonical", "hreflang", "international-seo", "duplicate-content", "seo", "static-site", "html", "sarif", "github-action"],
+  "author": "Louis Wright <hello@louiswright.co.uk> (https://github.com/MrLouisWright)",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/MrLouisWright/canonical-beacon.git" },
+  "bugs": { "url": "https://github.com/MrLouisWright/canonical-beacon/issues" },
+  "homepage": "https://github.com/MrLouisWright/canonical-beacon#readme"
+}
