@@ -5,15 +5,50 @@
   "type": "module",
   "main": "./src/index.js",
   "types": "./src/index.d.ts",
-  "exports": { ".": { "types": "./src/index.d.ts", "default": "./src/index.js" }, "./package.json": "./package.json" },
-  "bin": { "canonical-beacon": "bin/canonical-beacon.js" },
-  "files": ["src", "bin", "action.yml", "README.md", "CHANGELOG.md", "LICENSE"],
-  "engines": { "node": ">=18" },
-  "scripts": { "test": "node --test test/*.test.js" },
-  "keywords": ["canonical", "rel-canonical", "hreflang", "international-seo", "duplicate-content", "seo", "static-site", "html", "sarif", "github-action"],
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "canonical-beacon": "bin/canonical-beacon.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "action.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "canonical",
+    "rel-canonical",
+    "hreflang",
+    "international-seo",
+    "duplicate-content",
+    "seo",
+    "static-site",
+    "html",
+    "sarif",
+    "github-action"
+  ],
   "author": "Louis Wright <hello@louiswright.co.uk> (https://github.com/MrLouisWright)",
   "license": "MIT",
-  "repository": { "type": "git", "url": "git+https://github.com/MrLouisWright/canonical-beacon.git" },
-  "bugs": { "url": "https://github.com/MrLouisWright/canonical-beacon/issues" },
-  "homepage": "https://github.com/MrLouisWright/canonical-beacon#readme"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrLouisWright/canonical-beacon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MrLouisWright/canonical-beacon/issues"
+  },
+  "homepage": "https://mrlouiswright.github.io/canonical-beacon/"
 }
