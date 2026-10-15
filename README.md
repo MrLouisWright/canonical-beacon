@@ -1,5 +1,7 @@
 # canonical-beacon
 
+[![npm version](https://img.shields.io/npm/v/canonical-beacon.svg)](https://www.npmjs.com/package/canonical-beacon) [![CI](https://github.com/MrLouisWright/canonical-beacon/actions/workflows/ci.yml/badge.svg)](https://github.com/MrLouisWright/canonical-beacon/actions/workflows/ci.yml) [![Node](https://img.shields.io/node/v/canonical-beacon.svg)](https://nodejs.org) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 > Check canonical tags and hreflang clusters in your built static site: one canonical per page, pointing at a real, indexable, final URL, and hreflang clusters that are valid, self-referencing and reciprocal.
 
 Canonical and hreflang mistakes are silent. A template ships two canonicals, a page canonicalises to a URL that was renamed, a translated page points hreflang at an English page that never links back, or a region is written `en-UK`. Search engines then ignore the hints, index the wrong URL or show the wrong language. `canonical-beacon` reads the built HTML (plus `Link` headers from `_headers`/`vercel.json`) and checks every canonical and hreflang annotation against the other pages in the build. Each finding has the file, line, severity and a **concrete fix**.
