@@ -1,6 +1,6 @@
 {
   "name": "canonical-beacon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Check canonical tags and hreflang clusters in your built static site: missing, multiple, relative or in-body canonicals, targets that are missing, noindex or chained, and hreflang codes, self-references, return links and x-default. Text/JSON/SARIF/Markdown, allowlist with expiry, GitHub Action. Zero deps.",
   "type": "module",
   "main": "./src/index.js",
