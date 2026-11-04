@@ -84,7 +84,7 @@ HIGH     e.html:1 Canonical https://example.com/gone.html has no page in the bui
 ## Options
 
 ```text
-canonical-beacon 1.0.0 — check canonical tags and hreflang clusters in your built static site
+canonical-beacon 1.0.1 — check canonical tags and hreflang clusters in your built static site
 
 Usage: canonical-beacon [site-dir] [options]
 
@@ -184,12 +184,20 @@ The action runs the bundled CLI with Node 20; it has no dependencies to install.
 
 ## Library
 
+Install it in your project first:
+
+```bash
+npm install --save-dev canonical-beacon
+```
+
 ```js
 import { check, validHreflang } from "canonical-beacon";
 const report = check("dist", { baseUrl: "https://example.com" });
 console.log(report.counts, report.findings[0]);
 validHreflang("en-UK"); // { ok: false, reason: ... }
 ```
+
+The package is ESM-only (there is no CommonJS build): use `import`, or `await import("canonical-beacon")` from CommonJS.
 
 Types are included.
 
